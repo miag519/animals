@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animals</title>
+  <style>
+body {background-color:rgb(241, 255, 250);}
+h1   {font-family: "papyrus", fantasy; font-size:50px; color: rgb(69, 69, 69);}
+h2   {font-family: 'Times New Roman', serif; color: rgb(147, 183, 190);}
+p    {color: rgb(213, 199, 188);} 
+    </style>
+</head>
+<body>
+
+  <h1><b>Top 2 Favorite Animals</b></h1>
+
+  <h2>1. Anteaters!</h2>
+  <img src="anteater.jpg" alt="anteater walking" width="500" height="333">
+  <p><i><b>image credits go to the <a href="https://www.potawatomizoo.org/animal/giant-anteater/" target="_blank">Potawatomi zoo website</a>.</b></i></p>
+
+  <h2>2.Pandas!</h2>
+  <img src="panda.webp" alt="panda eating bamboo looking at camera" width="500" height="333">
+  <p><i><b>image credits go to the <a href="https://www.forbes.com/sites/anafaguy/2023/11/16/chinese-president-hints-pandas-may-return-to-us/?sh=3f18a151588d" target="_blank">Forbes article</a>.</b></i></p>
+
+  
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animals</title>
+  <style>
+body {background-color:rgb(241, 255, 250);}
+h1   {font-family: "papyrus", fantasy; font-size:50px; color: rgb(69, 69, 69);}
+h2   {font-family: 'Times New Roman', serif; color: rgb(147, 183, 190);}
+p    {color: rgb(213, 199, 188);} 
+.center {
+  text-align: center;
+  border: 2px solid black;
+  outline: #8aa2a9 solid 10px;
+  margin: auto;  
+  padding: 20px;
+}
+.right {
+  float: right;
+  width: 600px;
+  padding: 10px;
+}
+.left {
+  float: left;
+  width: 600px;
+  padding: 10px;
+}
+a:link {
+  color:rgb(185, 199, 203);
+}
+a:visited {
+  color:rgb(126, 152, 160);
+}
+a:hover {
+  color:rgb(192, 216, 208);
+}
+    </style>
+</head>
+<body>
+
+<div class="center">
+  <h1><b>Top 2 Favorite Animals</b></h1>
+</div>
+
+<div class="left">
+  <h2>1. Anteaters!</h2>
+  <img src="anteater.jpg" alt="anteater walking" width="500" height="333">
+  <p><i><b>image credits go to the <a href="https://www.potawatomizoo.org/animal/giant-anteater/" target="_blank">Potawatomi zoo website</a>.</b></i></p>
+</div>
+
+  
+<div class="right">
+  <h2>2.Pandas!</h2>
+  <img src="panda.webp" alt="panda eating bamboo looking at camera" width="500" height="333">
+  <p><i><b>image credits go to the <a href="https://www.forbes.com/sites/anafaguy/2023/11/16/chinese-president-hints-pandas-may-return-to-us/?sh=3f18a151588d" target="_blank">Forbes article</a>.</b></i></p>
+</div>
+
+  
+</body>
+</html>
