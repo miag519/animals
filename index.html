@@ -21,27 +21,55 @@ h2   {
   text-decoration-color: #56876D;
 }
     
-p    {
+div.desc    {
   color: rgb(213, 199, 188);
 } 
     
 .center {
   text-align: center;
-  border: 2px solid black;
-  outline: #8aa2a9 solid 10px;
+<!--  border: 2px solid black;
+  outline: #8aa2a9 solid 10px; -->
   margin: auto;  
   padding: 20px;
 }
     
-h1.double {
+#example1 {
+  background: url(jboarder2.jpg) right bottom no-repeat, url(paper.gif) left top repeat;
+  padding: 15px;
+ }
+ 
+<!-- h1.double {
   border-style: double;
   padding: 20px;
+} -->
+
+div.gallery img {
+  width: 100%;
+  height: 6;
 }
-    
-.img-container {
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
   float: left;
-  width: 33.33%;
-  padding: 5px;
+  width: 24.99999%;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
 }
 
 .clearfix::after {
@@ -65,29 +93,49 @@ a:hover {
 </head>
 <body>
 
+<div id="example1">
   <div class="center">
-    <h1 class="double"><b>Top<sub>two</sub>Favorite<sup>Animals</sup>by<sub>Mia</sub>Garcia</b></h1>
+		<h1 <!--class="double">--><b><sup>My</sup>top<sub>four</sub>Favorite<sup>Animals</sup>by<sub>Mia</sub>Garcia</b></h1>
+	  </div>
   </div>
 
-  <div class="clearfix">
-    <div class="img-container">
-    <h2>1. Anteaters!</h2>
-    <img src="anteater.jpg" alt="anteater walking" width="500" height="333">
-    <p><i><b>image credits go to the <a href="https://www.potawatomizoo.org/animal/giant-anteater/" target="_blank">Potawatomi zoo website</a>.</b></i></p>
-     </div>
+	<div class="responsive">
+	  <div class="gallery">
+		<h2>1. Anteaters!</h2>
+		  <img src="anteater.jpg" alt="anteater walking" width="500" height="333">
+		</a>
+		<div class="desc"><i><b>image credits go to the <a href="https://www.potawatomizoo.org/animal/giant-anteater/" target="_blank">Potawatomi zoo website</a>.</b></i></div>
+	  </div>
+	</div>
+	
+	<div class="responsive">
+	  <div class="gallery">
+		<h2>2.Pandas!</h2>
+		   <img src="panda.webp" alt="panda eating bamboo looking at camera" width="500" height="333">
+		</a>
+		<div class="desc"><i><b>image credits go to the <a href="https://www.forbes.com/sites/anafaguy/2023/11/16/chinese-president-hints-pandas-may-return-to-us/?sh=3f18a151588d" target="_blank">Forbes article</a>.</b></i></div>
+	  </div>
+	</div>
 
-    <div class="img-container">
-    <h2>2.Pandas!</h2>
-    <img src="panda.webp" alt="panda eating bamboo looking at camera" width="500" height="333">
-    <p><i><b>image credits go to the <a href="https://www.forbes.com/sites/anafaguy/2023/11/16/chinese-president-hints-pandas-may-return-to-us/?sh=3f18a151588d" target="_blank">Forbes article</a>.</b></i></p>
-     </div>
+	<div class="responsive">
+	  <div class="gallery">
+		<h2>2.Polar Bear!</h2>
+		   <img src="pbear.jpg" alt="panda eating bamboo looking at camera" width="500" height="333">
+		</a>
+		<div class="desc"><i><b>image credits go to the <a href="https://www.onekindplanet.org/animal/bear-polar/" target="_blank">One Kind Planet website</a>.</b></i></div>
+	  </div>
+	</div>
+	
+	<div class="responsive">
+	  <div class="gallery">
+		<h2>3.White Tiger!</h2>
+		   <img src="wtiger.jpg" alt="white tiger looking at camera" width="500" height="333">
+		</a>
+		<div class="desc"><i><b>image credits go to the <a href="https://a-z-animals.com/animals/white-tiger/" target="_blank">AZ Animals website</a>.</b></i></div>
+	  </div>
+	</div>
 
-    <div class="img-container">
-    <h2>Why?</h2>
-    <img src="panda.webp" alt="panda eating bamboo looking at camera" width="500" height="333">
-    <p><i><b>image credits go to the <a href="https://www.forbes.com/sites/anafaguy/2023/11/16/chinese-president-hints-pandas-may-return-to-us/?sh=3f18a151588d" target="_blank">Forbes article</a>.</b></i></p>
-     </div>
-  </div>
+	<div class="clearfix">
   
 </body>
 </html>
