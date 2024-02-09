@@ -30,11 +30,13 @@ div.desc    {
   outline: #8aa2a9 solid 10px; -->
   margin: auto;  
   padding: 20px;
+  width: 100%;
 }
     
 #example1 {
-  background: url(jboarder2.jpg) right bottom no-repeat, url(paper.gif) left top repeat;
+  background: url(jboarder2.jpg) center bottom no-repeat;
   padding: 15px;
+  width: 100%;
  }
  
 <!-- h1.double {
@@ -58,6 +60,14 @@ div.gallery img {
 
 }
 
+.responsive1 {
+  padding: 0 6px;
+  float: left;
+  width: 100%;
+  margin: auto;
+
+}
+
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
@@ -67,10 +77,21 @@ div.gallery img {
 
 @media only screen and (max-width: 500px) {
   .responsive {
-    width: 100%;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .responsive1 {
+    width: auto;
+    margin: 6px 0;
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .responsive1 {
+    width: 100%;
+  }
+}
 .clearfix::after {
   content: "";
   clear: both;
@@ -94,12 +115,15 @@ a:hover {
 </head>
 <body>
 
-<div id="example1">
-  <div class="center">
+
+<div class="responsive1">
+ <div class="center">
+	  <div id="example1">
 		<h1 <!--class="double">--><b><sup>My</sup>top<sub>four</sub>Favorite<sup>Animals</sup>by<sub>Mia</sub>Garcia</b></h1>
 	  </div>
-  </div>
-
+	  </div>
+ </div>
+ 
 	<div class="responsive">
 	  <div class="gallery">
 		<h2>1. Anteaters!</h2>
