@@ -1,6 +1,9 @@
-<style>
-p.solid {border-style: solid;}
-body {background-color:rgb(241, 255, 250);}
+p.solid {
+  border-style: solid;
+}
+body {
+  background-color:rgb(241, 255, 250);
+}
 h1   {
   font-family: "papyrus", fantasy; 
   font-size:50px; 
@@ -81,4 +84,3 @@ a:visited {
 a:hover {
   color:rgb(192, 216, 208);
 }
-    </style>
