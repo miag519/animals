@@ -24,8 +24,6 @@ div.desc    {
     
 .center {
   text-align: center;
-<!--  border: 2px solid black;
-  outline: #8aa2a9 solid 10px; -->
   margin: auto;  
   padding: 20px;
 }
@@ -34,15 +32,10 @@ div.desc    {
   background: url(jboarder2.jpg) right bottom no-repeat, url(paper.gif) left top repeat;
   padding: 15px;
  }
- 
-<!-- h1.double {
-  border-style: double;
-  padding: 20px;
-} -->
 
 div.gallery img {
   width: 100%;
-  height: 6;
+  height: 6%;
 }
 
 * {
